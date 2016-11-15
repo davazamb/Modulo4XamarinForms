@@ -19,8 +19,7 @@
     <DatePicker></DatePicker>
     <SearchBar Text="SliderControl" Value="10"></SearchBar>
     <Label Text="Progress indicator:"></Label>
-    <ProgressBar Progress="{Binding Source={x:Reference Name:SliderControl}, Path=Value}"></ProgressBar>
-    
+    <ProgressBar Progress="{Binding Source={x:Reference Name:SliderControl}, Path=Value}"></ProgressBar>    
   </StackLayout>
 </ScrollView>
 </ContentPage>
