@@ -7,5 +7,20 @@
   <Label Text="Welcome to Xamarin Forms!"
            VerticalOptions="Center"
            HorizontalOptions="Center" />
-
+<ScrollView>
+  <StackLayout Orientation="Vertical"
+               Padding="5,0,0,0">
+    <Switch></Switch>
+    <Entry></Entry>
+    <Button Text="Button"
+            Command="{Binding PathMessageCommand}">      
+    </Button>
+    <Label Text="Date:"></Label>
+    <DatePicker></DatePicker>
+    <SearchBar Text="SliderControl" Value="10"></SearchBar>
+    <Label Text="Progress indicator:"></Label>
+    <ProgressBar Progress="{Binding Source={x:Reference Name:SliderControl}, Path=Value}"></ProgressBar>
+    
+  </StackLayout>
+</ScrollView>
 </ContentPage>
